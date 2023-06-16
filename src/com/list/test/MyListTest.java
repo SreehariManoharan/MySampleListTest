@@ -9,17 +9,17 @@ import org.junit.Test;
 
 public class MyListTest {
 
-	private List<String> myTestList;
+	private MyList myTestList;
 	
 	@Before
-	public void setUp() {
+	public void setInitialList() {
 		myTestList = new MyList();
 	}
 	
 	@Test
 	public void testAdd() {
 		myTestList.add("Sreehari");
-		assertEquals(1, myTestList.size());
+		assertEquals("sreehari", myTestList.get(0));
 	}
 
 }
