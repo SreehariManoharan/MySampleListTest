@@ -35,4 +35,11 @@ public class MyListTest {
 		assertEquals(false, myTestList.isEmpty());
 	}
 
+	@Test
+	public void testRemove() {
+		myTestList.add("GOD.dev");
+		myTestList.add("Sreehari");
+		assertEquals("GOD.dev", myTestList.get(0));
+		myTestList.remove(0);
+	}
 }
