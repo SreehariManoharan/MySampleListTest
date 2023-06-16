@@ -10,24 +10,24 @@ import org.junit.Test;
 public class MyListTest {
 
 	private MyList myTestList;
-	
+
 	@Before
 	public void setInitialList() {
 		myTestList = new MyList();
 	}
-	
+
 	@Test
 	public void testAdd() {
 		myTestList.add("Sreehari");
 		assertEquals("Sreehari", myTestList.get(0));
 	}
-	
+
 	@Test
 	public void testSize() {
 		myTestList.add("GOD");
 		assertEquals(1, myTestList.size());
 	}
-	
+
 	@Test
 	public void testIsEmpty() {
 		assertEquals(true, myTestList.isEmpty());
@@ -42,5 +42,11 @@ public class MyListTest {
 		assertEquals("GOD.dev", myTestList.get(0));
 		myTestList.remove(0);
 		assertEquals("Sreehari", myTestList.get(0));
+	}
+	
+	@Test
+	public void testContains() {
+		myTestList.add("GOD.dev");
+		assertEquals(true, myTestList.contains("GOD.dev"));
 	}
 }
