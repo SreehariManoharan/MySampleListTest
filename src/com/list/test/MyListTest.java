@@ -21,5 +21,11 @@ public class MyListTest {
 		myTestList.add("Sreehari");
 		assertEquals("Sreehari", myTestList.get(0));
 	}
+	
+	@Test
+	public void testSize() {
+		myTestList.add("GOD");
+		assertEquals(1, myTestList.size());
+	}
 
 }
