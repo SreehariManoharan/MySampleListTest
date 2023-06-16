@@ -27,5 +27,10 @@ public class MyListTest {
 		myTestList.add("GOD");
 		assertEquals(1, myTestList.size());
 	}
+	
+	@Test
+	public boolean testIsEmpty() {
+		assertEquals(false, myTestList.isEmpty());
+	}
 
 }
