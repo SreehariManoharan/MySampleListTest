@@ -41,5 +41,6 @@ public class MyListTest {
 		myTestList.add("Sreehari");
 		assertEquals("GOD.dev", myTestList.get(0));
 		myTestList.remove(0);
+		assertEquals("Sreehari", myTestList.get(0));
 	}
 }

@@ -25,4 +25,8 @@ public class MyList{
 		// TODO Auto-generated method stub
 		return size == 0;
 	}
+	public void remove(int i) {
+		System.arraycopy(elements, i + 1, elements, i, 1);
+		elements[--size] = null;
+	}
 }
