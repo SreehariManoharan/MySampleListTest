@@ -19,7 +19,7 @@ public class MyListTest {
 	@Test
 	public void testAdd() {
 		myTestList.add("Sreehari");
-		assertEquals("sreehari", myTestList.get(0));
+		assertEquals("Sreehari", myTestList.get(0));
 	}
 
 }
