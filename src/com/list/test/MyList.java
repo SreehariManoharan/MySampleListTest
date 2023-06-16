@@ -21,4 +21,8 @@ public class MyList{
 	  public int size() {
 		  return size;
 	  }
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return size == 0;
+	}
 }

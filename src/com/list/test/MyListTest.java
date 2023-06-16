@@ -29,7 +29,9 @@ public class MyListTest {
 	}
 	
 	@Test
-	public boolean testIsEmpty() {
+	public void testIsEmpty() {
+		assertEquals(true, myTestList.isEmpty());
+		myTestList.add("Some random test Data");
 		assertEquals(false, myTestList.isEmpty());
 	}
 
